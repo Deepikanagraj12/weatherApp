@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="wrapper">
+      
+        <h1>Weather App</h1>
+
+        <div class="tab-container">
+   
+            <p class=" tab your-Weather ">Your Weather</p>
+            <p class=" tab search-Weather ">Search Weather</p>
+        
+        </div>
+
+        <div class="userInfoContainer">
+            
+            <div class=" sub-container grantAcces ">
+
+              <img src="./assets/location.png" width="80" height="80">
+              <p>Grant Location Access</p>
+              <p>Allow Access to get weather Information</p>
+              <button class="Access-Btn">Grant Access </button>
+
+            </div>
+
+            <form class="SearchCity">
+
+                <input placeholder="Search for City..." searchData>
+                <button class="Search-Btn"><img src="./assets/search.png" width="20" height="20"></button>
+            
+            </form>
+
+            <div class=" sub-container loader">
+
+                <img src="./assets/loading.gif" width="150" height="150">
+                <p>Loading</p>
+
+            </div>
+
+            <div class="sub-container weatherInfo">
+
+              <div class="name">
+                <p class=" cityName"></p>
+                 <img class="cityFlag">
+              </div>
+
+                 <p class="weather-Desc"></p>
+                 <img class="weather-Desc-icon" >
+
+                 <p class="temp"></p>
+
+                 <div class="parameter-cards">
+
+                    <div class="card">
+                        <img src="./assets/wind.png">
+                        <p>Wind Speed</p>
+                        <p class="wind-speed"></p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/humidity.png">
+                        <p>Humidity</p>
+                        <p class="humidity"></p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/cloud.png">
+                        <p>Clouds</p>
+                        <p class="clouds"></p>
+                    </div>
+
+                 </div>
+            </div>  
+            
+            <div class=" sub-container error">
+                 <img src="/assets/not-found.png" width="240px" height="240px">
+                 <p>Error 404 Not Found !</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
